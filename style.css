@@ -848,8 +848,6 @@ h4 {
 
 .bg-atlanta-20made-20sign {
     background-image: url("img/atlanta-made-sign.webp");
-    background-image: url("img/atlanta-made-sign.webp"), linear-gradient(45deg, black, transparent);
-    background-size: cover;
 }
 
 .bg-atlanta-20made-20sign-20orange {
