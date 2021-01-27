@@ -848,7 +848,7 @@ h4 {
 }
 
 .bg-atlanta-20made-20sign {
-    background-image: url("img/atlanta-made-sign.webp") no-repeat top center fixed;
+    background: url("img/atlanta-made-sign.webp") no-repeat top center fixed;
 }
 
 .bg-atlanta-20made-20sign-20orange {
