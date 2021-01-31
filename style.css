@@ -3,7 +3,6 @@ body {
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
-    font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -60,6 +59,7 @@ a:hover {
 .bg-center,
 .bg-l-edge,
 .bg-r-edge,
+.bg-t-edge,
 .bg-b-edge,
 .bg-tl-edge,
 .bg-bl-edge,
@@ -78,10 +78,6 @@ a:hover {
 
 .bg-t-edge {
     background: top no-repeat;
-    -webkit-background-size: cover!important;
-    -moz-background-size: cover!important;
-    -o-background-size: cover!important;
-    background-size: cover!important; 
 }
 
 .bloc-bg-texture::before {
@@ -95,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.webp");
+    background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
 
@@ -138,8 +134,6 @@ a:hover {
 .d-bloc h6 a,
 .d-bloc p a {
     color: rgba(255, 255, 255, .6);
-    padding: 11px;
-    margin-top: -11px;
 }
 
 .d-bloc .a-btn:hover,
@@ -201,7 +195,7 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-    color: #575757;
+    color: rgba(0, 0, 0, .5);
 }
 
 .d-bloc .panel button:hover,
@@ -290,10 +284,8 @@ a:hover {
 }
 
 #bloc-2-services p {
-    font-size: 16px;
+    font-size: 11px;
 }
-
-
 
 .navbar {
     margin-bottom: 0;
@@ -310,8 +302,7 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-height: 40px;
-    max-width: 214px;
+    max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
 }
@@ -347,9 +338,8 @@ a:hover {
 }
 
 .navbar-toggle {
-    padding: 16px 15px 18px 15px;
+    margin: 10px 10px 0 0;
     border: 0px;
-    margin: 0px;
 }
 
 .navbar-toggle:hover {
@@ -536,7 +526,7 @@ button {
 }
 
 .showScrollTop {
-    font-size: 18px;
+    font-size: 14px;
     opacity: 1;
 }
 
@@ -687,7 +677,7 @@ a {
 }
 
 p {
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .tight-width-whitespace {
@@ -704,7 +694,7 @@ p {
     margin-top: 22px;
     color: #FFFFFF!important;
     text-transform: uppercase;
-    padding: 13px 28px 13px 28px;
+    padding: 12px 28px 12px 28px;
     font-size: 1.0em;
     font-weight: 700;
 }
@@ -720,7 +710,7 @@ h2 {
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -773,17 +763,9 @@ h4 {
 }
 
 .service-header {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
-}
-
-.img-to-text {
-    font-size: 30px;
-}
-
-.review {
-    font-size: 20px;
 }
 
 .bgc-white {
@@ -799,12 +781,12 @@ h4 {
 }
 
 .tc-white {
-    color: #FFFFFF!important;
+    color: #364577!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #2F3F6A!important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -814,7 +796,6 @@ h4 {
 
 .ltc-white {
     color: #FFFFFF!important;
-    padding: 20px;
 }
 
 .ltc-white:hover {
@@ -829,38 +810,25 @@ h4 {
     color: #c27956!important;
 }
 
-.highlighted-text {
-    color: #2F3F6A!important;
-    background-color: #F3976C!important;}
-
-.highlighted-text:hover {
-    color: #FFFFFF!important; 
-    background-color: #c27956!important;}
-
 .icon-dark-slate-blue {
     color: #364577!important;
     border-color: #364577!important;
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.webp");
+    background-image: url("img/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.webp");
+    background-image: url("img/lines-h2-bg.png");
 }
 
 .bg-atlanta-20made-20sign {
-    background-image: url("img/atlanta-made-sign.webp");
-    background-size: cover;
-    background-attachment: fixed;
-    background-origin: inherit;
-    background-position: top center;
-    background-clip: inherit;
+    background-image: url("img/atlanta%20made%20sign.jpg");
 }
 
 .bg-atlanta-20made-20sign-20orange {
-    background-image: url("img/atlanta-made-sign-orange.webp");
+    background-image: url("img/atlanta%20made%20sign%20orange.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -910,7 +878,10 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-
+    .bloc {
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
+    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -919,6 +890,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
     }
 }
 
