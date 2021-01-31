@@ -1435,7 +1435,7 @@ img {
 .img-responsive,
 .thumbnail a>img,
 .thumbnail>img {
-    display: block;
+    /* display: block; */
     max-width: 100%;
     height: auto
 }
