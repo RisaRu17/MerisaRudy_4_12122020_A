@@ -8,6 +8,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.preload {
+    display: none;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
