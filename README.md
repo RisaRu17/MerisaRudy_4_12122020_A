@@ -4,14 +4,14 @@
 <h1>GoMike Designs</h1>
 <p></p>
 
-<h2>Screenshot of Lighthouse Report before optimization:</h2>
+<h2>Screenshot of Lighthouse Report <i>before optimization</i>:</h2>
 <img src="https://user-images.githubusercontent.com/68970720/107563767-774e4880-6baf-11eb-9dc5-86b11d3ecfb8.png" width="90%"></img> 
 <br>
-<h2>Screenshot of Lighthouse Report after optimization:</h2>
+<h2>Screenshot of Lighthouse Report <i>after optimization</i>:</h2>
 <img src="https://user-images.githubusercontent.com/68970720/107563869-94831700-6baf-11eb-88ca-23ba26ad42c4.png" width="90%"></img> 
-<ul><br>
-<h2>Optimized Content:</h2>
 <br>
+<ul>
+<h2>Optimized Content:</h2>
 <li><h3><b>Keywords</b></h3></li><ul>
 <li><p>&emsp;Replaced keywords in meta tag with recommended keywords</p></li><ul>
   <li><p>&emsp;Reference: Google Ads Keyword Planner</p></li></ul>
