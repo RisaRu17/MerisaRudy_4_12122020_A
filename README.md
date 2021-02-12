@@ -5,7 +5,7 @@
 <p></p>
 
 <h2>Screenshot of Lighthouse Report <i>before optimization</i>:</h2>
-<img src="https://user-images.githubusercontent.com/68970720/107832604-dd2d0280-6d5e-11eb-85fb-a42a69fcb0e9.png" width="15%"></img> 
+<img src="https://user-images.githubusercontent.com/68970720/107832604-dd2d0280-6d5e-11eb-85fb-a42a69fcb0e9.png" width="90%"></img> 
 <br>
 <h2>Screenshot of Lighthouse Report <i>after optimization</i>:</h2>
 <img src="https://user-images.githubusercontent.com/68970720/107563869-94831700-6baf-11eb-88ca-23ba26ad42c4.png" width="90%"></img> 
